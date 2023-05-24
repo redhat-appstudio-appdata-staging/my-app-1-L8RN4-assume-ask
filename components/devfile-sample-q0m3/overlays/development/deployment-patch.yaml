@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-q0m3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/afred-tenant/my-app-1/devfile-sample-q0m3@sha256:2660bf0a6cd8b34e197947c0f24a9f7e9ce753acd769ba17af5ca4ca43414a91
+        name: my-nodejs
+        resources: {}
+status: {}
